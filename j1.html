@@ -1,0 +1,31 @@
+<!-- JSON : JavaScript Object Notation -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var data={
+            "test":[{"t1":"a","t2":"b"},{"t3":"c"}],
+            "name":"A", //string
+            "age":20,  //number
+            "marks":{"FSD2":22,"Python2":20},  //object
+            "friends":["P","Q","R"],  //array
+            "present":true,  //boolean
+            "hobby":null
+        }
+
+        console.log(data);
+        console.log(data.name);
+        console.log(data["age"]);
+        console.log(data.marks.FSD2)  //(data["marks"]["Python2"])
+        console.log(data.friends[2])
+        console.log("hobby of "+data.name+" is : "+data.hobby);
+        console.log(data.test[1].t3);
+        
+    </script>
+</body>
+</html>

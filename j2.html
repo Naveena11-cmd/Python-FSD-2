@@ -1,0 +1,29 @@
+<!-- inbuilt functions of js -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var o={
+            name:"abc",
+            marks:25
+        }
+        document.write(o);
+        var s=JSON.stringify(o);
+        document.write(s);
+
+        o.marks=21;
+        o["name"]="M";
+        console.log(o);
+        
+        var o1='{"name":"x","age":15}';
+        var p=JSON.parse(o1);
+        document.write(p);
+        document.write(p.name);
+    </script>
+</body>
+</html>
