@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="details()">Click here for details</button>
+    <h3 id="a"></h3>
+    <h4 id="b"></h4>
+
+    <script>
+        function details(){
+            var o='{"name":"x", "dob":"2007-03-11","city":"ahmd"}';
+        var o1=JSON.parse(o);
+        document.getElementById("a").innerHTML="Welcome "+o1.name+"<br> city : "+o1.city;
+        document.getElementById("b").innerHTML="Date of Birth : "+new Date(o1.dob);
+        }
+    </script>
+</body>
+</html>
