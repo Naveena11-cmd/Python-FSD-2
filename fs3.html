@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="temp"></h1>
+    <script>
+        // setInterval(sum,2000);
+        // function sum(){
+        //     let a=1;
+        //     let b=3;
+
+        //     let t=a+b;
+        //     a++;
+        //     b++;
+        //     document.getElementById("temp").innerHTML=t;
+        // }
+
+        let x=2, y=3;
+        setInterval(()=>{
+            document.getElementById("temp").innerHTML= ++x + ++y;
+        },2000)
+    </script>
+</body>
+</html>
