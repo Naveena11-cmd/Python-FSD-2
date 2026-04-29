@@ -1,0 +1,9 @@
+<h1>Hello</h1>
+<%var clg="<b>LJU</b>" %> 
+<p><%= clg %></p>  <!-- escaped html : considers as simple text -->
+<p><%- clg %></p>  <!-- unescaped html : considers as html -->
+<%# this is comment %>
+<%% this is ejs %>
+
+<h1>name is <%= name %></h1>
+<h3>age is <%= age %></h3>
