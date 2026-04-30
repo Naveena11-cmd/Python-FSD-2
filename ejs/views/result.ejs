@@ -1,0 +1,19 @@
+<table border="2">
+    <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Marks</th>
+    </tr>
+
+    <tr>
+        <td><%=name%></td>
+        <td><%=subject%></td>
+        <td><%=marks%></td>
+    </tr>
+</table>
+
+<% if(marks>35) {%>
+<h3>You <span style="color: green;">Passed</span></h3>
+<%} else{ %>
+<h3>You <span style="color: red;">Failed</span></h3>
+<%}%>
